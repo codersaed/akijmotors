@@ -18,7 +18,7 @@ const Banner = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation, Autoplay]}
-        className="w-full h-3/4"
+        className="w-full lg:h-screen"
       >
         <SwiperSlide>
           <img
