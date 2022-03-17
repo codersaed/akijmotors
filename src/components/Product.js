@@ -4,7 +4,7 @@ const Product = () => {
   return (
     <div className="my-16 container mx-auto">
       <div>
-        <h1 className="text-center text-4xl font-bold mb-12">
+        <h1 className="text-center text-blue-800 text-4xl font-bold mb-12">
           Find Best Vehicles
         </h1>
       </div>

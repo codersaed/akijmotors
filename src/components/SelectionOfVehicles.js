@@ -8,7 +8,7 @@ const SelectionOfVehicles = () => {
           <h2 className="text-4xl font-bold text-blue-800 text-center">
             Largest Selection of Vehicles
           </h2>
-          <p className="text-center text-lg py-3 px-32">
+          <p className="text-center text-lg py-3 px-0 lg:px-32">
             AKIJ Motors, one of the biggest auto mobile companies in Bangladesh.
             It has been working since 2016 with trust & reputation. Akij Motors
             solely believes in total customer satisfaction with "Trust & Mutual
