@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  MdPermPhoneMsg,
-  MdOutlineMenu,
-  MdMarkEmailUnread,
-  MdLocationOn,
-} from "react-icons/md";
+import { MdOutlineMenu } from "react-icons/md";
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);

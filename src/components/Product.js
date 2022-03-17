@@ -183,6 +183,9 @@ const Product = () => {
             <br />
             Controller.
           </h1>
+          <button className="rounded-full bg-red-500 px-8 py-3 text-white mt-6">
+            Learn More
+          </button>
         </div>
         <div>
           <img src="/images/product7.png" alt="" />
