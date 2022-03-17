@@ -4,7 +4,7 @@ import { slide as Menu } from "react-burger-menu";
 const Sidebar = ({ props }) => {
   return (
     <>
-      {/* <Menu {...props}>
+      <Menu {...props}>
         <a className="menu-item" href="/">
           Home
         </a>
@@ -20,7 +20,7 @@ const Sidebar = ({ props }) => {
         <a className="menu-item" href="/desserts">
           Medium Duty
         </a>
-      </Menu> */}
+      </Menu>
     </>
   );
 };
