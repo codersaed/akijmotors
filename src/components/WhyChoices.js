@@ -23,7 +23,7 @@ const WhyChoices = () => {
               <p className="text-gray-600 font-bold">Vehicle in Stock</p>
             </div>
           </div>
-          <div className="text-center p-8 bg-white rounded-lg mx-10 relative top-8">
+          <div className="text-center p-8 bg-white rounded-lg mx-10 relative lg:top-8 ">
             <div className="break-all">
               <div className="p-3 flex justify-center">
                 <img className="h-16" src="/images/icon4.png" alt="" />
@@ -31,7 +31,6 @@ const WhyChoices = () => {
               <h5 className="text-xl text-red-400 font-bold p-3">20k</h5>
               <p className="text-gray-600 font-bold">Happy Customer</p>
             </div>
-            relative top-8
           </div>
           <div className="text-center p-8 bg-white rounded-lg mx-10">
             <div className="break-all">
@@ -42,7 +41,7 @@ const WhyChoices = () => {
               <p className="text-gray-600 font-bold">Dealer</p>
             </div>
           </div>
-          <div className="text-center p-8 bg-white rounded-lg mx-10 relative top-8">
+          <div className="text-center p-8 bg-white rounded-lg mx-10 relative lg:top-8">
             <div className="break-all">
               <div className="p-3 flex justify-center">
                 <img className="h-16" src="/images/icon2.png" alt="" />
