@@ -7,14 +7,13 @@ import Header from "./components/Header";
 import Product from "./components/Product";
 import SelectionOfVehicles from "./components/SelectionOfVehicles";
 import Services from "./components/Services";
-import Sidebar from "./components/Sidebar";
 import WhyChoices from "./components/WhyChoices";
 
 function App() {
   return (
     <>
+      {/* <Sidebar /> */}
       <Header />
-      <Sidebar />
       <Banner />
       <Product />
       <WhyChoices />
