@@ -7,21 +7,24 @@ import Header from "./components/Header";
 import Product from "./components/Product";
 import SelectionOfVehicles from "./components/SelectionOfVehicles";
 import Services from "./components/Services";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import WhyChoices from "./components/WhyChoices";
+import Sidebar from "./common/Sidebar";
 
 function App() {
   return (
     <>
-      {/* <Sidebar /> */}
-      <Header />
-      <Banner />
-      <Product />
-      <WhyChoices />
-      <Services />
-      <SelectionOfVehicles />
-      <Ads />
-      <Blog />
-      <Footer />
+      <Router>
+        <Header />
+        <Banner />
+        <Product />
+        <WhyChoices />
+        <Services />
+        <SelectionOfVehicles />
+        <Ads />
+        <Blog />
+        <Footer />
+      </Router>
     </>
   );
 }

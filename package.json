@@ -13,8 +13,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.0",
     "styled-components": "^5.2.1",
-    "swiper": "^8.0.7",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^0.2.4",
+    "swiper": "^8.0.7"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,4 +1,5 @@
 import React from "react";
+import Sidebar from "../common/Sidebar";
 
 const Header = () => {
   // const [navbarOpen, setNavbarOpen] = useState(false);
@@ -64,8 +65,9 @@ const Header = () => {
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div>
             <div className="flex flex-row py-0 lg:py-4">
+              <Sidebar />
               <a
-                className="pr-36 lg:py-0 py-3 flex items-center text-base uppercase text-white font-medium border-t-4 border-slate-900 lg:border-none hover:text-red-400"
+                className="pr-36 lg:py-0 py-3 flex items-center text-base uppercase text-white font-medium border-slate-900 "
                 href="/"
               >
                 CATEGORIES
