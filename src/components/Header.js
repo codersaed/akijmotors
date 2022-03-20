@@ -1,55 +1,45 @@
 import React from "react";
-import Sidebar from "../common/Sidebar";
+import SideMenu from "../common/SideMenu";
 
-const Header = () => {
-  // const [navbarOpen, setNavbarOpen] = useState(false);
-
+const Header = ({ isOpen, closeModal, openModal }) => {
   return (
     <>
-      <div className="relative flex flex-wrap items-center justify-between px-2 py-1 bg-white">
+      <div className="relative flex flex-wrap items-center justify-between py-1 bg-white">
         <div className="container px-4 py-3 mx-auto flex flex-wrap items-center justify-between ">
-          <div className="text-lg uppercase font-medium text-white leading-relaxed inline-block mr-4 py-2">
-            <div>
-              <img src="images/logo.png" className="h-12" alt="Logo" />
-            </div>
+          <div className="py-2 mx-auto lg:mx-0">
+            <img src="images/logo.png" className="h-12" alt="Logo" />
           </div>
-          <nav className="relative px-2 pt-3 lg:pt-0">
-            <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+          <nav className="relative pt-3 lg:pt-0 mx-auto lg:mx-0 md:mx-0">
+            <div className="container  mx-auto flex flex-wrap items-center justify-between">
               <div>
                 <div className="flex flex-row py-0 lg:py-4">
                   <a
-                    className="px-3 py-2 flex items-center text-sm uppercase font-medium hover:text-red-400"
+                    className="px-3 py-2 flex items-center text-xs lg:text-sm uppercase font-medium hover:text-red-400"
                     href="/"
                   >
                     Home
                   </a>
 
                   <a
-                    className="px-3 py-2 flex items-center text-sm uppercase font-medium text-black hover:text-red-400"
+                    className="px-3 py-2 flex items-center text-xs lg:text-sm uppercase font-medium text-black hover:text-red-400"
                     href="/"
                   >
                     About Us
                   </a>
                   <a
-                    className="px-3 py-2 flex items-center text-sm uppercase font-medium text-black hover:text-red-400"
+                    className="px-3 py-2 flex items-center text-xs lg:text-sm uppercase font-medium text-black hover:text-red-400"
                     href="/"
                   >
-                    Projects
+                    Akij Group
                   </a>
                   <a
-                    className="px-3 py-2 flex items-center text-sm uppercase font-medium text-black hover:text-red-400"
+                    className="px-3 py-2 flex items-center text-xs lg:text-sm uppercase font-medium text-black hover:text-red-400"
                     href="/"
                   >
-                    Services
+                    Dealer
                   </a>
                   <a
-                    className="px-3 py-2 flex items-center text-sm uppercase font-medium text-black hover:text-red-400"
-                    href="/"
-                  >
-                    Blog
-                  </a>
-                  <a
-                    className="px-3 py-2 flex items-center text-sm uppercase font-medium text-black hover:text-red-400"
+                    className="px-3 py-2 flex items-center text-xs lg:text-sm uppercase font-medium text-black hover:text-red-400"
                     href="/"
                   >
                     Contact
@@ -65,7 +55,11 @@ const Header = () => {
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div>
             <div className="flex flex-row py-0 lg:py-4">
-              <Sidebar />
+              <SideMenu
+                isOpen={isOpen}
+                closeModal={closeModal}
+                openModal={openModal}
+              />
               <a
                 className="pr-36 lg:py-0 py-3 flex items-center text-base uppercase text-white font-medium border-slate-900 "
                 href="/"
@@ -113,7 +107,7 @@ const Header = () => {
                 className="px-3 lg:py-0 py-3 flex items-center text-xs uppercase font-medium text-white hover:text-red-400"
                 href="/"
               >
-                FORKLIFT/STACKER
+                FORKLIFT STACKER
               </a>
               <a
                 className="px-3 lg:py-0 py-3 flex items-center text-xs uppercase font-medium text-white hover:text-red-400"

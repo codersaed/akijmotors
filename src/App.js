@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Ads from "./components/Ads";
 import Banner from "./components/Banner";
@@ -9,14 +10,25 @@ import SelectionOfVehicles from "./components/SelectionOfVehicles";
 import Services from "./components/Services";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import WhyChoices from "./components/WhyChoices";
-import Sidebar from "./common/Sidebar";
+
+import "./App.css";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function closeModal() {
+    setIsOpen(false);
+  }
+
+  function openModal() {
+    setIsOpen(true);
+  }
+
   return (
-    <>
+    <div className="body">
       <Router>
-        <Header />
-        <Banner />
+        <Header isOpen={isOpen} closeModal={closeModal} openModal={openModal} />
+        <Banner isOpen={isOpen} />
         <Product />
         <WhyChoices />
         <Services />
@@ -25,7 +37,7 @@ function App() {
         <Blog />
         <Footer />
       </Router>
-    </>
+    </div>
   );
 }
 
