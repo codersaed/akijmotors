@@ -10,7 +10,6 @@ import SelectionOfVehicles from "./components/SelectionOfVehicles";
 import Services from "./components/Services";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import WhyChoices from "./components/WhyChoices";
-
 import "./App.css";
 
 function App() {
@@ -25,7 +24,7 @@ function App() {
   }
 
   return (
-    <div className="body">
+    <>
       <Router>
         <Header isOpen={isOpen} closeModal={closeModal} openModal={openModal} />
         <Banner isOpen={isOpen} />
@@ -37,7 +36,7 @@ function App() {
         <Blog />
         <Footer />
       </Router>
-    </div>
+    </>
   );
 }
 

@@ -60,6 +60,7 @@ const Header = ({ isOpen, closeModal, openModal }) => {
                 closeModal={closeModal}
                 openModal={openModal}
               />
+
               <a
                 className="pr-36 lg:py-0 py-3 flex items-center text-base uppercase text-white font-medium border-slate-900 "
                 href="/"

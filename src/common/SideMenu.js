@@ -19,8 +19,8 @@ const SideMenu = ({ isOpen, closeModal, openModal }) => {
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog
           as="div"
-          className="fixed lg:top-40 left-0 right-0 z-10 overflow-y-auto"
-          style={{ top: "200px" }}
+          className="fixed top-[216px] lg:top-[164px] left-0 right-0 z-10 overflow-y-auto"
+          // style={{ top: "216px" }}
           onClose={closeModal}
         >
           <div className="flex min-h-screen">
@@ -33,7 +33,7 @@ const SideMenu = ({ isOpen, closeModal, openModal }) => {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Dialog.Overlay className="fixed top-48 lg:top-40 left-0 right-4 bottom-0 bg-gray-100 bg-opacity-70" />
+              <Dialog.Overlay className="fixed top-0 lg:top-40 left-0 right-0 lg:right-4 bottom-0 bg-opacity-70" />
             </Transition.Child>
             <Transition.Child
               as={Fragment}
@@ -44,7 +44,7 @@ const SideMenu = ({ isOpen, closeModal, openModal }) => {
               leaveFrom="opacity-100"
               leaveTo="opacity-0 transform -translate-x-20"
             >
-              <div className="relative bg-white w-64">
+              <div className="relative bg-white w-64 overflow-y-auto h-screen">
                 <Sidebar />
               </div>
             </Transition.Child>

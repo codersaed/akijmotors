@@ -9,7 +9,7 @@ const Menu = ({ item }) => {
   return (
     <>
       <div
-        className="flex justify-between text-black items-center p-5 list-none h-16 no-underline text-sm cursor-pointer"
+        className="flex justify-between text-black items-center px-5 list-none h-16 no-underline text-sm cursor-pointer"
         to={item.path}
         onClick={item.subNav && showSubnav}
       >
@@ -29,7 +29,7 @@ const Menu = ({ item }) => {
         item.subNav.map((item, index) => {
           return (
             <div
-              className="h-16 pl-12 flex items-center no-underline text-black text-sm cursor-pointer"
+              className="h-16 pl-10 flex items-center no-underline text-black text-sm cursor-pointer"
               to={item.path}
               key={index}
             >
