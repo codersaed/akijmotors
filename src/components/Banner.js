@@ -22,28 +22,16 @@ const Banner = ({ isOpen }) => {
           }}
           navigation={true}
           modules={[Pagination, Navigation, Autoplay]}
-          className="w-full h-screen "
+          className="w-full h-screen"
         >
           <SwiperSlide>
-            <img
-              className="w-full h-full object-cover"
-              src="/images/banner1.jpg"
-              alt=""
-            />
+            <img className="w-full h-full" src="/images/banner1.jpg" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              className="w-full h-full object-cover"
-              src="/images/banner1.jpg"
-              alt=""
-            />
+            <img className="w-full h-full" src="/images/banner1.jpg" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              className="w-full h-full object-cover"
-              src="/images/banner1.jpg"
-              alt=""
-            />
+            <img className="w-full h-full" src="/images/banner1.jpg" alt="" />
           </SwiperSlide>
         </Swiper>
       </div>

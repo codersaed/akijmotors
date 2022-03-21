@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { FiMenu, FiX } from "react-icons/fi";
 import Sidebar from "./Sidebar";
@@ -20,7 +20,6 @@ const SideMenu = ({ isOpen, closeModal, openModal }) => {
         <Dialog
           as="div"
           className="fixed top-[216px] lg:top-[164px] left-0 right-0 z-10 overflow-y-auto"
-          // style={{ top: "216px" }}
           onClose={closeModal}
         >
           <div className="flex min-h-screen">
@@ -33,7 +32,7 @@ const SideMenu = ({ isOpen, closeModal, openModal }) => {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Dialog.Overlay className="fixed top-0 lg:top-40 left-0 right-0 lg:right-4 bottom-0 bg-opacity-70" />
+              <Dialog.Overlay className="fixed bg-gray-100 top-[216px] lg:top-[164px] left-0 right-0 lg:right-4 bottom-0 bg-opacity-70" />
             </Transition.Child>
             <Transition.Child
               as={Fragment}
